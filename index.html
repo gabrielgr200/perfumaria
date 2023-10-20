@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <title>BLÓSS</title>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <img src="logo.png" alt="" class="logo">
+      <div class="search">
+        <div class="icon"></div>
+        <div class="input">
+          <input type="text" placeholder="pesquisar" id="inputsearch">
+          <span class="delete"></span>
+        </div>
+      </div>
+      <ul class="navbar-items">
+        <li class="user"> 
+          <i class="fa-regular fa-user"></i>
+        </li>
+        <li class="navbar-items">
+          <p>Seja bem-vindo!</p>  
+          <strong>
+            <a href="inscreva.html">Inscrever-se</a>
+          </strong>
+          ou
+          <strong>
+            <a href="login.html">Entrar</a>
+          </strong>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+
+    <div class="content">
+        <div class="imagem">
+            <input type="radio" name="imagem" id="imagem1" checked>
+            <input type="radio" name="imagem" id="imagem2">
+            <input type="radio" name="imagem" id="imagem3">
+            <input type="radio" name="imagem" id="imagem4">
+            <input type="radio" name="imagem" id="imagem5">
+    
+            <div class="imagens g1">
+                <img src="imagem1.jpg" alt="lacta" class="lacta">
+             </div>
+            <div class="imagens">
+                <img src="imagem2.jpg" alt="lacta" class="lacta">
+             </div>
+            <div class="imagens">
+                <img src="imagem3.jpg" alt="lacta" class="lacta">
+             </div>
+            <div class="imagens">
+                <img src="imagem4.jpg" alt="lacta" class="lacta">
+             </div>
+             <div class="imagens">
+                <img src="imagem5.jpg" alt="robert" class="robert">
+             </div>
+        </div>
+    
+        <div class="navigation">
+            <label class="bar" for="imagem1"></label>
+            <label class="bar" for="imagem2"></label>
+            <label class="bar" for="imagem3"></label>
+            <label class="bar" for="imagem4"></label>
+            <label class="bar" for="imagem5"></label>
+        </div>
+    
+    </div>
+    
+    <div class="showcase" data-mobile-row="2">
+        <h4>PRODUTOS EM LANÇAMENTOS</h4>
+        <h3>Novidade na área</h3>
+        <div class="swiper-container swiper-container-horizontal swiper-container-android">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem6.jpg" alt="Imagem do Produto">
+                  <h3>Creed Aventus</h3>
+                  <p class="price">R$ 4.019,65</p>
+                   <button class="buy-button" onclick="buyProduct('Creed Aventus')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem7.jpg" alt="Imagem do Produto 2">
+                  <h3>Chocolate Greedy</h3>
+                  <p class="price">R$ 1.200,00</p>
+                   <button class="buy-button" onclick="buyProduct('Chocolate Greedy')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem8.jpg" alt="Imagem do Produto 3">
+                  <h3>Acqua Di Gio</h3>
+                  <p class="price">R$ 382,24</p>
+                   <button class="buy-button" onclick="buyProduct('Acqua Di Gio')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem9.jpg" alt="Imagem do Produto 4">
+                  <h3>K de Dolce & Gabbana</h3>
+                  <p class="price">R$ 609,84</p>
+                   <button class="buy-button" onclick="buyProduct('K de Dolce & Gabbana')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem10.jpg" alt="Imagem do Produto 5">
+                  <h3>The One de Dolce & Gabbana</h3>
+                  <p class="price">R$ 525,90</p>
+                   <button class="buy-button" onclick="buyProduct('The One de Dolce & Gabbana')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem11.jpg" alt="Imagem do Produto 6">
+                  <h3>Sauvage Dior</h3>
+                  <p class="price">R$ 1.010,00</p>
+                   <button class="buy-button" onclick="buyProduct('Sauvage Dior')">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-container">
+        <video id="my-video" controls autoplay>
+          <source src="royal.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+
+    <div class="showcase" data-mobile-row="2">
+        <h4>PRODUTOS COM DESCONTO</h4>
+        <h3>Desconto para o dia dos namorados</h3>
+        <div class="swiper-container swiper-container-horizontal swiper-container-android">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem12.jpg" alt="Imagem do Produto">
+                  <h3>Mancera Instant Crush</h3>
+                  <p class="price">R$ 754,49</p>
+                   <button class="buy-button" onclick="buyProduct('Mancera Instant Crushs')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem13.jpg" alt="Imagem do Produto 2">
+                  <h3>Bleu de Chanel</h3>
+                  <p class="price">R$ 980,99</p>
+                   <button class="buy-button" onclick="buyProduct('Bleu de Chanel')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem14.jpg" alt="Imagem do Produto 3">
+                  <h3>One Million Privé</h3>
+                  <p class="price">R$ 5.472,00</p>
+                   <button class="buy-button" onclick="buyProduct('Renascer')"><a href="prive.html">Comprar</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem15.jpg" alt="Imagem do Produto 4">
+                  <h3>Nishane Hacivat</h3>
+                  <p class="price">R$ 2.499,00</p>
+                   <button class="buy-button" onclick="buyProduct('Nishane')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem17.jpg" alt="Imagem do Produto 5">
+                  <h3>Versace Eros</h3>
+                  <p class="price">R$ 529,99</p>
+                   <button class="buy-button" onclick="buyProduct('Versace Eros')">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 192.5px; margin-right: 5px;">
+              <div class="price">
+                <div class="product">
+                  <img src="imagem16.jpg" alt="Imagem do Produto 6">
+                  <h3>Xerjoff Accento</h3>
+                  <p class="price">R$ 1.710,00</p>
+                   <button class="buy-button" onclick="buyProduct('Xerjoff Accento')">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer id="footer">
+        <div class="footer-content">
+           <img src="imagem/logo.jpg" alt="" class="logo">
+            <ul class="footer-menu">
+                <p>Empresa</p>
+             <li class="footer-menu-item">
+              Sobre nós
+             </li>
+             <li class="footer-menu-item">
+              Minhas compras
+              </li>
+             <li class="footer-menu-item">
+              Minha conta
+             </li>
+             <li class="footer-menu-item">
+              FAQ
+             </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Produtos</p>
+              <li class="footer-menu-item">
+                Unissex
+              </li>
+              <li class="footer-menu-item">
+                Masculinos
+              </li>
+              <li class="footer-menu-item">
+                Novidades
+              </li>
+              <li class="footer-menu-item">
+                Todos perfumes
+               </li>
+            </ul>
+            
+            <ul class="footer-menu">
+                <p>Curiosidades</p>
+                <li class="footer-menu-item">
+                  Como produzimos
+                </li>
+                <li class="footer-menu-item">
+                  Nossas Entregas
+                </li>
+                <li class="footer-menu-item">
+                    Devoluções
+                </li>
+                <li class="footer-menu-item">
+                  Onde estamos
+                </li>
+                <li class="footer-menu-item">
+                  Customizados
+                </li>
+           </ul>
+            <ul class="footer-menu">
+                <p>Mais informações</p>
+                <li class="footer-menu-item">
+                  Imprensa
+                </li>
+                <li class="footer-menu-item">
+                  Termos e condições
+                </li>
+                <li class="footer-menu-item">
+                  Privacidade
+                </li>
+                <li class="footer-menu-item">
+                  Blog
+                </li>
+           </ul>
+
+           </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-items">Privacidade e Cookies</li>
+                <li class="footer-info-items">Gerenciar cookies</li>
+                <li class="footer-info-items">Ética e Compliance</li>
+                <li class="footer-info-items">Avisos de terciros</li>
+                <li class="footer-info-items">Sobre os nossos anúncios</li>
+            </ul>
+            <p>&copy; BLÓSS perfumaria 2023</p>
+        </div>
+       </footer> 
+    <script src="java.js"></script>
+    <script src="botao.js"></script>
+    <script src="barra.js"></script>
+    <script src="teste.js"></script>
+    <script src="video.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+</body>
+</html>
